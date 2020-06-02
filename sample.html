@@ -3,15 +3,22 @@
   <head>
     <link rel="stylesheet" href="sample-styles.css" />
   </head>
-  
+  <style>
+      A {
+          text-decoration: none;
+      }
+  </style>
   <body>
-    <header>
-      <div id="header-logo">
-        JA 
-      </div>
-      <a href="#about-me">About Me</a>      
-      <a href="#projects">Projects</a>
-    </header>
+      <header>
+          <div id="header-logo">
+              JA
+          </div>
+          <a href="#about-me">About Me</a>
+          |
+          <a href="#projects">Projects</a>
+          |
+          <a href="#contact-info">Contact Me</a>
+      </header>
     <div id="name-callout">
       <div id="name">
         Josiel Aponte
@@ -22,15 +29,21 @@
         About Me
       </span>
       <p class="section-text">
-        Here is the about me that I will fill with interesting things about me, such as the 
-        school I go to, my year of graduation, my majors, and my general interests. Along 
-        with that, I will briefly go into my past work experience that is related to this
-        work field I am interested in. All of this information will eventually come from
-        my resume.
+          I am a senior at Williams College, double majoring in Computer Science and Studio
+          Art, with a concentration in Latina/o Studies. I am primarily interested in
+          software engineering, developing application software, and generally learning how
+          a programming language works. I'm currently learning how to work on editing websites
+          using HTML and CSS, but I also have experience with content management systems,
+          such as WordPress. After graduation, I hope to work with a company to create new
+          tools that can be useful for everyday life by creating implementations for things
+          that may not seem connected to coding.
       </p>
       <p class="section-text">
-        Here, I can go more into my past experiences and anything that just generally doesn't
-        fit into the first paragraph of the about me section.
+          Aside from computer science, I use a lot of my free time to develop my art skills
+          in different mediums, primarily photography and drawing. While on campus, I
+          participate in an West African drum and dance group called Kusika, as well as
+          volunteer to help with a first-year orientation group focused on identity,
+          sustainability, and social justice, called Root.
       </p>
     </div>
     <div id="projects" class="section">
@@ -46,9 +59,10 @@
             "Do the Math" Programming Language - F#
           </span>
           <span class="project-description">
-            Simple programming language made to simulate how other programming languages would
-            work; focuses solely on being able to compute simple math expressions in prefix and
-            infix notation.
+              Do the Math (DTM) is a simple specialized programming language made to
+              simulate how other languages work using parsers and evaluators. It includes a
+              REPL, supports file input, and focuses on computing math expressions in prefix
+              and infix notation.
           </span>
         </div>
         <div class="project-item">
@@ -56,9 +70,9 @@
             Exam Scheduler - Java
           </span>
           <span class="project-description">
-            Used weighted graph and a greedy sorting algorithm to schedule exams based on
-            students’ schedules; Optimized schedule for any list of students to prevent
-            back-to-back time slots
+              This program uses a weighted graph and a greedy sorting algorithm to schedule
+              exams based on a list of students’ schedules. It creates an optimized schedule
+              for any list of students to prevent back-to-back time slots.
           </span>
         </div>
         <div class="project-item">
@@ -66,9 +80,9 @@
             Hash Table Statistics - Java
           </span>
           <span class="project-description">
-            Implemented hash table to compute statistics on data set of 3,000+ movies;
-            Provided constant search time for information on the movies from Rotten
-            Tomatoes
+              This program implements a hash table to compute statistics on a data set of
+              3,000+ movies. It provided constant search time for information on the movies
+              that the website, Rotten Tomatoes, provides.
           </span>
         </div>
         <div class="project-item">
@@ -76,11 +90,29 @@
             Cache Memory Simulator - C
           </span>
           <span class="project-description">
-            Simulated the hit/miss behavior of a cache memory using the LRU replacement
-            policy; Dynamically created based on any size that was requested
+              This program simulates the hit/miss behavior of cache memory using the LRU
+              replacement policy. It dynamically creates the cache based on any size that
+              was requested by the user.
           </span>
         </div> 
-      </div>
+      </div>       
+    </div>
+    <div id="contact-info" class="section">
+        <span class="section-header">
+            Contact Me
+        </span>
+        <div id="contact-list">
+            <div class="contact-item">
+                <span class="contact-title">
+                    <a href="http://github.com/japonte21/" style="color:pink;">GitHub</a>
+                </span>
+            </div>
+            <div class="contact-item">
+                <span class="contact-title">
+                    <a href="mailto:jma1@williams.edu"style="color:pink;">Email</a>
+                </span>
+            </div>
+        </div>
     </div>
     <footer>
       Made by Josiel Aponte &copy; 2020
