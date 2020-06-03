@@ -1,72 +1,122 @@
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" href="styles.css" />
-  <div>
-    <!-- Headers help to draw attention to titles in your document -->
-    <h1>Header 1</h1>
-    <h2>Header 2</h2>
-    <p>This is a paragraph</p>
-    <button class="click-button">Click Me!</button>
-    <button id="this-button">Another button</button>
-    <a href="https://wso.williams.edu">Link to WSO</a>
-  </div>
-  <div class="container">
-    <h3>Organize your document</h3>
-    <p>
-      If the organisational structure make sense, it becomes a lot easier to style documents
-    </p>
-    <div>
-      <p>
-        hello
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    A {
+        text-decoration: none;
+        transition: 0.3s;
+    }
+  </style>
+  <body>
+    <header>
+      <div id="header-logo">
+        JA
+      </div>
+      <a href="#about-me">About Me</a>
+      |
+      <a href="#projects">Projects</a>
+      |
+      <a href="#contact-info">Contact Me</a>
+    </header>
+    <div id="name-callout">
+      <div id="name">
+        Josiel Aponte
+      </div>
+    </div>
+    <div id="about-me" class="section">
+      <span class="section-header">
+        About Me
+      </span>
+      <p class="section-text">
+        I am a senior at Williams College, double majoring in Computer Science and Studio
+        Art, with a concentration in Latina/o Studies. I am primarily interested in
+        software engineering, developing application software, and generally learning how
+        a programming language works. I'm currently learning how to work on editing websites
+        using HTML and CSS, but I also have experience with content management systems,
+        such as WordPress. After graduation, I hope to work with a company to create new
+        tools that can be useful for everyday life by creating implementations for things
+        that may not seem connected to coding.
+      </p>
+      <p class="section-text">
+        Aside from computer science, I use a lot of my free time to develop my art skills
+        in different mediums, primarily photography and drawing. While on campus, I
+        participate in an West African drum and dance group called Kusika, as well as
+        volunteer to help with a first-year orientation group focused on identity,
+        sustainability, and social justice, called Root.
       </p>
     </div>
-  </div>
-  <ul>
-    <li>Unordered list item 1</li>
-    <li>Unordered list item 2</li>
-    <li>Unordered list item 3</li>
-  </ul>
-  <ol>
-    <li>Ordered list item 1</li>
-    <li>Ordered list item 2</li>
-    <li>Ordered list item 3</li>
-  </ol>
-  <br />
-  <!-- br stands for line break, and creates a gap between elements -->
-  <h2>Flexbox</h2>
-  <small></small>
-  Flexbox provides a quick method of having responsive elements. A good resource to learn it is
-  <a href="https://flexboxfroggy.com/">here</a>. Try resizing your browser and see what happens.
-</small>
-<div class="flex-container">
-  <div>
-    Lorem Ipsum
-  </div>
-  <div>Dolor est</div>
-  <div>
-    Et tu, Brutus
-  </div>
-  <div>
-    Another
-    <div></div>
-  </div>
-</div>
-<h2>Grids</h2>
-<small>
-  Grids are an alternative method of having responsive elements. A good resource to learn it is
-  <a href="https://cssgridgarden.com/">here</a>. Try resizing your browser and see what happens.
-</small>
-<div class="grid-container">
-  <div>
-    Lorem Ipsum
-  </div>
-  <div>Dolor est</div>
-  <div>
-    Et tu, Brutus
-  </div>
-  <div>
-    Another
-    <div></div>
-  </div>
-</div>
+    <div id="projects" class="section">
+      <span class="section-header">
+        Projects
+      </span>
+      <p class="section-text">
+        Here are some of the projects I've worked on:
+      </p>
+      <div id="project-list">
+        <div class="project-item">
+          <span class="project-title">
+            "Do the Math" Programming Language - F#
+          </span>
+          <span class="project-description">
+            Do the Math (DTM) is a simple specialized programming language made to
+            simulate how other languages work using parsers and evaluators. It includes a
+            REPL, supports file input, and focuses on computing math expressions in prefix
+            and infix notation.
+          </span>
+        </div>
+        <div class="project-item">
+          <span class="project-title">
+            Exam Scheduler - Java
+          </span>
+          <span class="project-description">
+            This program uses a weighted graph and a greedy sorting algorithm to schedule
+            exams based on a list of students’ schedules. It creates an optimized schedule
+            for any list of students to prevent back-to-back time slots.
+          </span>
+        </div>
+        <div class="project-item">
+          <span class="project-title">
+            Hash Table Statistics - Java
+          </span>
+          <span class="project-description">
+            This program implements a hash table to compute statistics on a data set of
+            3,000+ movies. It provided constant search time for information on the movies
+            that the website, Rotten Tomatoes, provides.
+          </span>
+        </div>
+        <div class="project-item">
+          <span class="project-title">
+            Cache Memory Simulator - C
+          </span>
+          <span class="project-description">
+            This program simulates the hit/miss behavior of cache memory using the LRU
+            replacement policy. It dynamically creates the cache based on any size that
+            was requested by the user.
+          </span>
+        </div> 
+      </div>       
+    </div>
+    <div id="contact-info" class="section">
+      <span class="section-header">
+        Contact Me
+      </span>
+      <div id="contact-list">
+        <div class="contact-item">
+          <span class="contact-title">
+            <a href="http://github.com/japonte21/" style="color: pink;">GitHub</a>
+          </span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-title">
+            <a href="mailto:jma1@williams.edu"style="color:pink;">Email</a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <footer>
+      Made by Josiel Aponte &copy; 2020
+    </footer>
+  </body>
 </html>

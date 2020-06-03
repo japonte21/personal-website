@@ -1,52 +1,140 @@
-p {
-  font-size: 24px;
+header {
+    background-color: #DCAFA8;
+    height: 80px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    align-items: center;
 }
 
-.click-button {
-  padding: 10px;
+header a {
+    color: #003B1F;
+    text-decoration: none;
+    transition: 0.3s;   
 }
 
-#this-button {
-  color: blue;
+a:hover {
+    font-size: 125%;
+    color: white;
 }
 
-.container {
-  margin: 10px; /* Margins refer to spacing outside the element */
-  padding: 20px; /* Paddings refers to spacing between the border and child elements */
-  background-color: aqua;
-  border-right: 3px solid blue;
-  border-bottom: 3px solid blue;
-  border-radius: 3px;
-  width: 80%; /* Giving widths a %, rather than a certain pixel value allows the element to be resized */
+html,
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
-/* We can apply CSS selectors with rules */
-/* This applies to all the descendant of items with the container class container which are p*/
-.container p {
-  color: purple;
+#name-callout {
+    width: 100%;
+    height: 800px;
+    background-color: #D7EEE3;
+    margin: 0;
+    display: flex;
 }
 
-/* This applies to all the immediate children of items of class container that are p */
-.container > p {
-  color: red;
+#name {
+    font-family: Candara, Palatino, sans-serif;
+    font-style: italic;
+    font-size: 108px;
+    font-weight: 700;
+    align-self: center;
+    flex: 1;
+    text-align: center;
+    animation: fadeIn .75s ease-in;
 }
 
-.flex-container {
-  display: flex;
-  width: 100%;
-  background: orange;
-  border: 3px solid red;
-  flex-wrap: wrap;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale3d(.80, .80, 1);
+    }
+    to {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    } 
 }
 
-.flex-container div {
-  flex: 1;
-  min-width: 400px;
+#about-me {
+    background: #A8D6C0;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  background: salmon;
-  border: 3px solid brown;
+#projects {
+    background-color: #5aa480;
+}
+
+#contact-info {
+    background-color: #3b5047;
+    color: white;
+}
+
+.section {
+    padding: 75px;
+}
+
+.section-header {
+    font-size: 40px;
+    font-family: Candara, Palatino, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-text {
+    font-size: 20px;
+    font-family: Candara, Palatino, sans-serif;
+    margin: 20px 0;
+}
+
+#project-list {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.project-item {
+    font-family: Candara, Palatino, sans-serif;
+    padding: 30px;
+    border: 3px solid #2A7E56;
+    background-color: #D7EEE3;
+    margin: 20px;
+}
+
+.project-title {
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.project-description {
+    text-align: justify;
+}
+
+#contact-list {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.contact-item {
+    font-family: Candara, Palatino, sans-serif;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    margin: 20px;
+    color: pink;
+}
+
+footer {
+    padding: 20px;
+    background-color: #DCAFA8;
+    color: #003B1F;
+    text-align: center;
+}
+
+#header-logo {
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 20px;
+    color: #003B1F;
 }
